@@ -10,7 +10,7 @@ btns.forEach((btn)=>{
                         
                 btns.forEach((btnI)=>{
 console.log(btnI.className);
-                                if(btnI.className == "accordion-header active"){
+                                if(btnI != btn && btnI.className == "accordion-header active"){
                                         const nextItemI = btnI.nextElementSibling;
                                         console.log(btnI.className);
                                         btnI.classList.toggle("active");
