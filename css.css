@@ -1,0 +1,71 @@
+body { 
+          font-family: sans-serif; 
+          background: #f4f4f4; 
+          display: flex; 
+          justify-content: center; 
+          padding-top: 50px; 
+}
+.accordion-container { 
+          width: 100%; 
+          max-width: 900px; 
+          background: rgb(255, 255, 255); 
+          border-radius: 8px; 
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.687); 
+          overflow: hidden; 
+}
+h2 { 
+          text-align: center; 
+          color: #333;
+ }
+
+/* El botón de la pregunta */
+.accordion-header {
+    background-color: #fff;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.3s;
+}
+
+.accordion-header:hover { 
+          background-color: #f1f1f1; 
+}
+
+/* Estilo cuando está activo (JS agregará esta clase) */
+.accordion-header.active {
+    background-color: #007bff;
+    color: white;
+}
+
+ 
+/* El contenido oculto */
+.accordion-content {
+    max-height:  0px; /* <--- TRUCO: Altura 0 por defecto */
+    overflow: hidden; /* Esconde lo que sobre */
+    transition: max-height 0.3s ease-out; /* Animación suave */
+    background-color: #fafafa;
+}
+
+.accordion-content p { 
+          padding: 15px; 
+          margin: 0; 
+          color: #555;
+ }
+
+/* Rotación del ícono + */
+.icon { 
+          transition: transform 0.3s; 
+}
+.accordion-header.active .icon { 
+          transform: rotate(45deg); 
+}

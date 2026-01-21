@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Menú Acordeón</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+
+    <div class="accordion-container">
+        <h2>Preguntas Frecuentes</h2>
+
+        <div class="accordion-item">
+            <button class="accordion-header">
+                ¿Qué es el DOM?
+                <span class="icon">+</span>
+            </button>
+            <div class="accordion-content">
+                <p>El DOM (Document Object Model) es una representación en árbol de tu HTML que JavaScript puede leer y modificar.</p>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <button class="accordion-header">
+                ¿Qué es un Event Listener?
+                <span class="icon">+</span>
+            </button>
+            <div class="accordion-content">
+                <p>Es una función que "escucha" o espera a que ocurra algo específico (como un clic) para ejecutar un código.</p>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <button class="accordion-header">
+                ¿Cuándo usar localStorage?
+                <span class="icon">+</span>
+            </button>
+            <div class="accordion-content">
+                <p>Úsalo cuando necesites guardar datos pequeños (como un carrito o tema oscuro) que persistan aunque cierres el navegador.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
